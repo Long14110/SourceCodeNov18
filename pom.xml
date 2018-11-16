@@ -21,6 +21,7 @@
         <jstl.version>1.2</jstl.version>
         <maven.complier.source>1.8</maven.complier.source>
         <maven.complier.target>1.8</maven.complier.target>
+        <sitemesh.version>2.4.2</sitemesh.version>
     </properties>
 
     <dependencies>
@@ -60,6 +61,13 @@
             <version>${springframework.version}</version>
         </dependency>
 
+        <!-- template sitemesh decorator easier than tiles library -->
+        <!-- https://mvnrepository.com/artifact/opensymphony/sitemesh -->
+        <dependency>
+            <groupId>opensymphony</groupId>
+            <artifactId>sitemesh</artifactId>
+            <version>${sitemesh.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>javax.servlet</groupId>
